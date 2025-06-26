@@ -11,12 +11,21 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+	title="Benefits that keep your best people"
+	subtitle="Matched savings, peer bonuses, and performance rewards."
+	imageSrc="/generated/image-a-group-of-construction-workers-diverse-.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/caterpillar.com',
+		'https://logo.clearbit.com/johndeere.com',
+		'https://logo.clearbit.com/mcdonalds.com',
+		'https://logo.clearbit.com/ge.com',
+		'https://logo.clearbit.com/chipotle.com'
+	]}
+/>
 
 <Summary
 	generating
