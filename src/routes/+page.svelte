@@ -11,9 +11,9 @@
 </script>
 
 <Hero
-	title="Benefits that actually work"
-	subtitle="Watch turnover drop 35% with matched savings that your team will love."
-	imageSrc="/generated/image-a-diverse-team-of-workers-celebrating-su.webp"
+	title="Better benefits for the people who build everything"
+	subtitle="Reward your frontline teams with matched savings, peer bonuses, and KPI rewards that actually matter to them—and deliver ROI that matters to you."
+	imageSrc="/generated/image-a-group-of-diverse-construction-workers-.webp"
 	centered={false}
 	callsToAction={[
 		{
