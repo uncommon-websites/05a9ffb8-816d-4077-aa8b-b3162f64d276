@@ -217,14 +217,14 @@
 			/>
 			
 			<!-- Enhanced floating elements with better animations -->
-			<div class="absolute top-8 left-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-primary animate-bounce shadow-lg border border-primary/20">
+			<div class="absolute top-8 left-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-primary animate-bounce border border-primary/20">
 				<div class="flex items-center gap-2">
 					<span class="text-lg">🚀</span>
 					<span>Live results</span>
 				</div>
 			</div>
 			
-			<div class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-accent animate-pulse shadow-lg border border-accent/20">
+			<div class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-accent animate-pulse border border-accent/20">
 				<div class="flex items-center gap-2">
 					<span class="text-lg">💰</span>
 					<span>Instant savings</span>
