@@ -72,10 +72,7 @@
 	</div>
 
 	<header
-		class={[
-			"relative section-px container mx-auto grid items-end gap-16 gap-y-9 py-16 pt-32 text-balance",
-			centered ? "place-items-center text-center" : " xl:grid-cols-[1fr_auto]"
-		]}
+		class="relative section-px container mx-auto grid items-end gap-16 gap-y-9 py-16 pt-32 text-balance {centered ? 'place-items-center text-center' : 'xl:grid-cols-[1fr_auto]'}"
 		data-enter-container
 	>
 		<div class="grid gap-8" class:max-w-prose={centered}>
@@ -104,9 +101,7 @@
 			{#if centered}
 				<p
 					data-enter
-					class={[
-						"text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out relative"
-					]}
+					class="text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out relative"
 				>
 					{subtitle}
 					<div class="absolute -top-2 -right-2 text-primary animate-pulse">✨</div>
