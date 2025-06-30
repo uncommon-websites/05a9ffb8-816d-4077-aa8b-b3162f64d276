@@ -1,16 +1,18 @@
 <script lang="ts">
 	// Components
+	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
 	import UseCases from "$lib/components/layout/UseCases.svelte";
 	import Summary from "$lib/components/layout/Summary.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
+	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 </script>
 
 <Hero
-	title="Better benefits for the people who build everything"
-	subtitle="Reward your frontline teams with matched savings, peer bonuses, and KPI rewards that actually matter to them—and deliver ROI that matters to you."
+	title="Financial wellness that builds stronger teams"
+	subtitle="Transform your workforce with matched savings goals, peer bonuses, and KPI rewards that reduce turnover by 35% while delivering 10x ROI. Purpose-built for construction, manufacturing, and restaurant teams."
 	imageSrc="/generated/image-a-group-of-diverse-construction-workers-.webp"
 	centered={false}
 	callsToAction={[

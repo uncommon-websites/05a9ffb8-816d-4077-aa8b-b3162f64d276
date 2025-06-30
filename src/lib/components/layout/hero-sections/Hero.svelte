@@ -88,7 +88,7 @@
 					<span class="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-accent absolute"></span>
 				</span>
 				<span class="relative z-10 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-					Now live: 10x ROI guaranteed
+					Backed by Sequoia • 10x ROI proven
 				</span>
 				<span class="text-lg relative z-10">🚀</span>
 				
@@ -165,6 +165,17 @@
 						<span class="font-bold text-base relative z-10">5-min setup</span>
 					</div>
 				</div>
+				
+				<div class="flex items-center gap-4 px-6 py-4 rounded-2xl bg-gradient-to-r from-white/90 to-white/80 backdrop-blur-xl border border-accent/20 text-accent group hover:scale-110 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl relative overflow-hidden">
+					<div class="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+					<div class="relative flex items-center gap-3">
+						<div class="relative">
+							<div class="h-4 w-4 rounded-full bg-gradient-to-r from-accent to-accent/70 animate-pulse delay-600"></div>
+							<div class="absolute inset-0 h-4 w-4 rounded-full bg-accent animate-ping opacity-40 delay-600"></div>
+						</div>
+						<span class="font-bold text-base relative z-10">Sequoia-backed</span>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -230,9 +241,9 @@
 			<!-- Premium floating elements with enhanced design -->
 			<div class="absolute top-10 left-10 bg-white/98 backdrop-blur-xl rounded-2xl px-6 py-4 text-base font-bold text-primary animate-bounce border border-primary/30 hover:scale-110 transition-transform duration-300 cursor-pointer group/card">
 				<div class="flex items-center gap-3">
-					<span class="text-2xl">🚀</span>
+					<span class="text-2xl">💰</span>
 					<span class="relative">
-						Live results
+						Matched savings
 						<div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover/card:w-full transition-all duration-300"></div>
 					</span>
 				</div>
@@ -240,9 +251,9 @@
 			
 			<div class="absolute bottom-10 right-10 bg-white/98 backdrop-blur-xl rounded-2xl px-6 py-4 text-base font-bold text-accent animate-pulse border border-accent/30 hover:scale-110 transition-transform duration-300 cursor-pointer group/card">
 				<div class="flex items-center gap-3">
-					<span class="text-2xl">💰</span>
+					<span class="text-2xl">🏆</span>
 					<span class="relative">
-						Instant savings
+						Peer bonuses
 						<div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover/card:w-full transition-all duration-300"></div>
 					</span>
 				</div>
@@ -252,21 +263,21 @@
 			<div class="absolute top-1/2 left-10 bg-white/95 backdrop-blur-xl rounded-xl px-4 py-3 text-sm font-semibold text-primary/90 animate-pulse delay-500 border border-primary/20 hover:scale-105 transition-transform duration-300">
 				<div class="flex items-center gap-2">
 					<span class="h-3 w-3 rounded-full bg-primary animate-ping"></span>
-					<span>Real-time tracking</span>
+					<span>KPI rewards</span>
 				</div>
 			</div>
 			
 			<div class="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-xl rounded-xl px-4 py-3 text-sm font-semibold text-accent/90 animate-bounce delay-700 border border-accent/20 hover:scale-105 transition-transform duration-300">
 				<div class="flex items-center gap-2">
 					<span class="text-lg">⚡</span>
-					<span>Instant setup</span>
+					<span>5-min setup</span>
 				</div>
 			</div>
 			
 			<div class="absolute top-1/4 right-1/4 bg-white/95 backdrop-blur-xl rounded-xl px-4 py-3 text-sm font-semibold text-primary/90 animate-bounce delay-1000 border border-primary/20 hover:scale-105 transition-transform duration-300">
 				<div class="flex items-center gap-2">
 					<span class="text-lg">📈</span>
-					<span>Growth guaranteed</span>
+					<span>35% less turnover</span>
 				</div>
 			</div>
 			
