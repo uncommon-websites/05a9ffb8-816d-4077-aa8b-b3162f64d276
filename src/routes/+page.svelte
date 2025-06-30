@@ -10,10 +10,20 @@
 </script>
 
 <Hero
-	title="Benefits that keep your best people"
-	subtitle="Matched savings, peer bonuses, and performance rewards."
-	imageSrc="/generated/image-a-group-of-construction-workers-diverse-.webp"
+	title="Benefits that actually work"
+	subtitle="Watch turnover drop 35% with matched savings that your team will love."
+	imageSrc="/generated/image-a-diverse-team-of-workers-celebrating-su.webp"
 	centered={false}
+	callsToAction={[
+		{
+			href: "/demo",
+			label: "See it in action"
+		},
+		{
+			href: "/pricing",
+			label: "Get pricing"
+		}
+	]}
 />
 <LogoScroller
 	label="Trusted by industry leaders"
