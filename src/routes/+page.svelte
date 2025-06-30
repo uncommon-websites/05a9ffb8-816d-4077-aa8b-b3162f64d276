@@ -6,7 +6,6 @@
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
-	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
 </script>
 
@@ -16,14 +15,14 @@
 	imageSrc="/generated/image-a-group-of-construction-workers-diverse-.webp"
 	centered={false}
 />
-<LogoScroller 
+<LogoScroller
 	label="Trusted by industry leaders"
 	logoUrls={[
-		'https://logo.clearbit.com/caterpillar.com',
-		'https://logo.clearbit.com/johndeere.com',
-		'https://logo.clearbit.com/mcdonalds.com',
-		'https://logo.clearbit.com/ge.com',
-		'https://logo.clearbit.com/chipotle.com'
+		"https://logo.clearbit.com/caterpillar.com",
+		"https://logo.clearbit.com/johndeere.com",
+		"https://logo.clearbit.com/mcdonalds.com",
+		"https://logo.clearbit.com/ge.com",
+		"https://logo.clearbit.com/chipotle.com"
 	]}
 />
 
