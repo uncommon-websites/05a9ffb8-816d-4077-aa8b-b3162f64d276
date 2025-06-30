@@ -64,36 +64,56 @@
 </script>
 
 <div class="relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5" {...rest}>
-	<!-- Dynamic background elements -->
-	<div class="absolute inset-0 opacity-30">
-		<div class="absolute top-10 left-10 h-32 w-32 rounded-full bg-primary/20 blur-xl animate-pulse"></div>
-		<div class="absolute top-32 right-20 h-24 w-24 rounded-full bg-accent/20 blur-lg animate-pulse delay-1000"></div>
-		<div class="absolute bottom-20 left-1/3 h-28 w-28 rounded-full bg-primary/15 blur-xl animate-pulse delay-500"></div>
+	<!-- Enhanced dynamic background elements -->
+	<div class="absolute inset-0 opacity-40">
+		<!-- Floating orbs with improved animations -->
+		<div class="absolute top-10 left-10 h-32 w-32 rounded-full bg-gradient-to-br from-primary/30 to-accent/20 blur-xl animate-pulse"></div>
+		<div class="absolute top-32 right-20 h-24 w-24 rounded-full bg-gradient-to-br from-accent/25 to-primary/15 blur-lg animate-pulse delay-1000"></div>
+		<div class="absolute bottom-20 left-1/3 h-28 w-28 rounded-full bg-gradient-to-br from-primary/20 to-accent/25 blur-xl animate-pulse delay-500"></div>
+		
+		<!-- Additional floating elements -->
+		<div class="absolute top-1/2 left-1/4 h-16 w-16 rounded-full bg-primary/10 blur-md animate-bounce delay-700"></div>
+		<div class="absolute bottom-1/3 right-1/4 h-20 w-20 rounded-full bg-accent/15 blur-lg animate-bounce delay-300"></div>
+		
+		<!-- Animated grid pattern -->
+		<div class="absolute inset-0 opacity-20">
+			<div class="h-full w-full bg-[linear-gradient(rgba(var(--primary-rgb),0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--primary-rgb),0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
+		</div>
 	</div>
+	
+	<!-- Subtle animated border -->
+	<div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 opacity-50 animate-pulse"></div>
 
 	<header
 		class="relative section-px container mx-auto grid items-end gap-16 gap-y-9 py-16 pt-32 text-balance {centered ? 'place-items-center text-center' : 'xl:grid-cols-[1fr_auto]'}"
 		data-enter-container
 	>
 		<div class="grid gap-8" class:max-w-prose={centered}>
-			<!-- Zesty badge -->
-			<div class="inline-flex items-center gap-2 w-fit px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium text-sm animate-bounce" data-enter>
-				<span class="h-2 w-2 rounded-full bg-primary animate-ping"></span>
-				Now live: 10x ROI guaranteed
+			<!-- Enhanced badge with better animation -->
+			<div class="inline-flex items-center gap-3 w-fit px-5 py-3 rounded-full bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/30 text-primary font-semibold text-sm hover:scale-105 transition-all duration-300 group" data-enter>
+				<span class="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-primary to-accent animate-ping"></span>
+				<span class="relative">
+					Now live: 10x ROI guaranteed
+					<div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+				</span>
+				<span class="text-xs opacity-75">🚀</span>
 			</div>
 
-			<h1 class="text-display w-full relative" data-enter>
-				<span class="block relative">
+			<h1 class="text-display w-full relative group" data-enter>
+				<span class="block relative overflow-hidden">
 					<AnimateText text={title} />
-					<!-- Zesty underline animation -->
-					<div class="absolute -bottom-2 left-0 h-1 w-full bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 animate-[scale-x_1.5s_ease-out_0.5s_forwards] origin-left"></div>
+					<!-- Enhanced underline animation with gradient -->
+					<div class="absolute -bottom-3 left-0 h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 animate-[scale-x_1.5s_ease-out_0.5s_forwards] origin-left"></div>
+					<!-- Subtle glow effect -->
+					<div class="absolute -bottom-3 left-0 h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary rounded-full transform scale-x-0 animate-[scale-x_1.5s_ease-out_0.5s_forwards] origin-left blur-sm opacity-50"></div>
 				</span>
 				{#if !centered}
-					<span class="text-emphasis-dim block mt-4 relative">
+					<span class="text-emphasis-dim block mt-6 relative group">
 						<AnimateText text={subtitle} />
-						<!-- Sparkle effects -->
-						<div class="absolute -top-2 -right-2 text-primary animate-pulse">✨</div>
-						<div class="absolute top-1/2 -left-3 text-accent animate-pulse delay-300">⚡</div>
+						<!-- Enhanced sparkle effects with better positioning -->
+						<div class="absolute -top-3 -right-4 text-primary animate-pulse text-lg">✨</div>
+						<div class="absolute top-1/2 -left-4 text-accent animate-pulse delay-300 text-lg">⚡</div>
+						<div class="absolute bottom-0 right-1/4 text-primary/70 animate-pulse delay-600 text-sm">💫</div>
 					</span>
 				{/if}
 			</h1>
@@ -108,19 +128,37 @@
 				</p>
 			{/if}
 
-			<!-- Zesty stats -->
-			<div class="flex gap-6 text-sm font-medium" data-enter>
-				<div class="flex items-center gap-2 text-primary">
-					<div class="h-2 w-2 rounded-full bg-primary animate-pulse"></div>
-					<span>35% less turnover</span>
+			<!-- Enhanced stats with better visual hierarchy -->
+			<div class="flex flex-wrap gap-8 text-sm font-semibold" data-enter>
+				<div class="flex items-center gap-3 text-primary group hover:scale-105 transition-transform duration-200">
+					<div class="relative">
+						<div class="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-primary/70 animate-pulse"></div>
+						<div class="absolute inset-0 h-3 w-3 rounded-full bg-primary animate-ping opacity-30"></div>
+					</div>
+					<span class="relative">
+						35% less turnover
+						<div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></div>
+					</span>
 				</div>
-				<div class="flex items-center gap-2 text-accent">
-					<div class="h-2 w-2 rounded-full bg-accent animate-pulse delay-200"></div>
-					<span>10x ROI proven</span>
+				<div class="flex items-center gap-3 text-accent group hover:scale-105 transition-transform duration-200">
+					<div class="relative">
+						<div class="h-3 w-3 rounded-full bg-gradient-to-r from-accent to-accent/70 animate-pulse delay-200"></div>
+						<div class="absolute inset-0 h-3 w-3 rounded-full bg-accent animate-ping opacity-30 delay-200"></div>
+					</div>
+					<span class="relative">
+						10x ROI proven
+						<div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></div>
+					</span>
 				</div>
-				<div class="flex items-center gap-2 text-primary">
-					<div class="h-2 w-2 rounded-full bg-primary animate-pulse delay-400"></div>
-					<span>5-min setup</span>
+				<div class="flex items-center gap-3 text-primary group hover:scale-105 transition-transform duration-200">
+					<div class="relative">
+						<div class="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-primary/70 animate-pulse delay-400"></div>
+						<div class="absolute inset-0 h-3 w-3 rounded-full bg-primary animate-ping opacity-30 delay-400"></div>
+					</div>
+					<span class="relative">
+						5-min setup
+						<div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></div>
+					</span>
 				</div>
 			</div>
 		</div>
@@ -132,23 +170,31 @@
 						href={ctaItem.href}
 						size="lg"
 						variant={index % 2 === 0 ? "primary" : "secondary"}
-						class="max-lg:hidden relative group overflow-hidden transform hover:scale-105 transition-all duration-200">
+						class="max-lg:hidden relative group overflow-hidden transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
 						{#snippet children()}
-							<span class="relative z-10">{ctaItem.label}</span>
+							<span class="relative z-10 font-semibold">{ctaItem.label}</span>
 							{#if index % 2 === 0}
-								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+								<!-- Shimmer effect -->
+								<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+							{:else}
+								<!-- Subtle glow for secondary button -->
+								<div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
 							{/if}
 						{/snippet}
 					</Button>
 					<Button
-						href={cta.href}
+						href={ctaItem.href}
 						size="md"
 						variant={index % 2 === 0 ? "primary" : "secondary"}
-						class="lg:hidden relative group overflow-hidden transform hover:scale-105 transition-all duration-200">
+						class="lg:hidden relative group overflow-hidden transform hover:scale-110 hover:-translate-y-1 transition-all duration-300">
 						{#snippet children()}
-							<span class="relative z-10">{cta.label}</span>
+							<span class="relative z-10 font-semibold">{ctaItem.label}</span>
 							{#if index % 2 === 0}
-								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+								<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+							{:else}
+								<div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
 							{/if}
 						{/snippet}
 					</Button>
@@ -158,21 +204,51 @@
 	</header>
 
 	{#if imageSrc}
-		<div class="col-span-full aspect-video relative overflow-hidden" data-enter>
-			<div class="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent z-10"></div>
+		<div class="col-span-full aspect-video relative overflow-hidden rounded-2xl group" data-enter>
+			<!-- Enhanced gradient overlays -->
+			<div class="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-background/10 z-10"></div>
+			<div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5 z-10"></div>
+			
 			<img
 				src={imageSrc}
-				alt="Energetic team celebrating success"
-				class="size-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
+				alt="Diverse construction workers celebrating success together"
+				class="size-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
 				onerror={handleImageError}
 			/>
-			<!-- Floating elements over image -->
-			<div class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 text-sm font-medium text-primary animate-bounce">
-				🚀 Live results
+			
+			<!-- Enhanced floating elements with better animations -->
+			<div class="absolute top-8 left-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-primary animate-bounce shadow-lg border border-primary/20">
+				<div class="flex items-center gap-2">
+					<span class="text-lg">🚀</span>
+					<span>Live results</span>
+				</div>
 			</div>
-			<div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 text-sm font-medium text-accent animate-pulse">
-				💰 Instant savings
+			
+			<div class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md rounded-xl px-4 py-3 text-sm font-semibold text-accent animate-pulse shadow-lg border border-accent/20">
+				<div class="flex items-center gap-2">
+					<span class="text-lg">💰</span>
+					<span>Instant savings</span>
+				</div>
 			</div>
+			
+			<!-- Additional floating stats -->
+			<div class="absolute top-1/2 left-8 bg-white/90 backdrop-blur-md rounded-lg px-3 py-2 text-xs font-medium text-primary/80 animate-pulse delay-500 shadow-md">
+				<div class="flex items-center gap-1">
+					<span class="h-2 w-2 rounded-full bg-primary animate-ping"></span>
+					<span>Real-time tracking</span>
+				</div>
+			</div>
+			
+			<div class="absolute bottom-1/3 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-lg px-3 py-2 text-xs font-medium text-accent/80 animate-bounce delay-700 shadow-md">
+				<div class="flex items-center gap-1">
+					<span class="text-sm">⚡</span>
+					<span>Instant setup</span>
+				</div>
+			</div>
+			
+			<!-- Subtle corner accents -->
+			<div class="absolute top-0 left-0 w-16 h-16 bg-gradient-to-br from-primary/20 to-transparent rounded-br-2xl"></div>
+			<div class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-accent/20 to-transparent rounded-tl-2xl"></div>
 		</div>
 	{/if}
 </div>
