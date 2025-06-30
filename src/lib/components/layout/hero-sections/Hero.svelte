@@ -121,14 +121,14 @@
 			</h1>
 
 			{#if centered}
-				<p
+				<div
 					data-enter
 					class="text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out relative text-xl leading-relaxed"
 				>
 					{subtitle}
-					<div class="absolute -top-3 -right-3 text-primary animate-bounce text-2xl drop-shadow-lg">✨</div>
-					<div class="absolute bottom-0 -left-3 text-accent animate-bounce delay-500 text-xl drop-shadow-lg">🌟</div>
-				</p>
+					<div class="absolute -top-3 -right-3 text-primary animate-bounce text-2xl">✨</div>
+					<div class="absolute bottom-0 -left-3 text-accent animate-bounce delay-500 text-xl">🌟</div>
+				</div>
 			{/if}
 
 			<!-- Premium stats cards with enhanced design -->
