@@ -133,20 +133,24 @@
 						size="lg"
 						variant={index % 2 === 0 ? "primary" : "secondary"}
 						class="max-lg:hidden relative group overflow-hidden transform hover:scale-105 transition-all duration-200">
-						<span class="relative z-10">{cta.label}</span>
-						{#if index % 2 === 0}
-							<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-						{/if}
+						{#snippet children()}
+							<span class="relative z-10">{cta.label}</span>
+							{#if index % 2 === 0}
+								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+							{/if}
+						{/snippet}
 					</Button>
 					<Button
 						href={cta.href}
 						size="md"
 						variant={index % 2 === 0 ? "primary" : "secondary"}
 						class="lg:hidden relative group overflow-hidden transform hover:scale-105 transition-all duration-200">
-						<span class="relative z-10">{cta.label}</span>
-						{#if index % 2 === 0}
-							<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-						{/if}
+						{#snippet children()}
+							<span class="relative z-10">{cta.label}</span>
+							{#if index % 2 === 0}
+								<div class="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+							{/if}
+						{/snippet}
 					</Button>
 				{/each}
 			</div>
