@@ -9,9 +9,9 @@
 </script>
 
 <Hero
-	title="Financial wellness that builds stronger teams"
-	subtitle="Transform your workforce with matched savings goals, peer bonuses, and KPI rewards that reduce turnover by 35% while delivering 10x ROI. Purpose-built for construction, manufacturing, and restaurant teams."
-	imageSrc="/generated/image-a-diverse-group-of-construction-workers-.webp"
+	title="Make work worth staying for"
+	subtitle="TANDA helps you retain your essential workforce with real financial benefits—like matched savings, peer bonuses, and KPI rewards—that put people first. Build loyalty. Boost morale. Reduce turnover."
+	imageSrc="/generated/image-a-group-of-diverse-construction-workers-.webp"
 	centered={false}
 	callsToAction={[
 		{
