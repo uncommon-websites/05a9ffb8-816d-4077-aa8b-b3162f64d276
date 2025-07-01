@@ -63,37 +63,49 @@
 	}: Props = $props();
 </script>
 
-<div class="relative overflow-hidden bg-gradient-to-br from-primary/12 via-background to-accent/12 min-h-screen flex items-center" {...rest}>
-	<!-- Enhanced background with animated elements -->
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(var(--primary-rgb),0.1),transparent_50%)]"></div>
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(var(--accent-rgb),0.08),transparent_50%)]"></div>
+<div class="relative overflow-hidden bg-gradient-to-br from-primary/15 via-background to-accent/15 min-h-screen flex items-center" {...rest}>
+	<!-- Enhanced background with multiple animated layers -->
+	<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(var(--primary-rgb),0.12),transparent_50%)]"></div>
+	<div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(var(--accent-rgb),0.10),transparent_50%)]"></div>
+	<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(var(--primary-rgb),0.05),transparent_70%)]"></div>
 	
-	<!-- Floating geometric shapes -->
-	<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-transparent rounded-full animate-pulse"></div>
-	<div class="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-br from-accent/10 to-transparent rounded-full animate-pulse delay-1000"></div>
-	<div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-primary/5 to-transparent rounded-full animate-pulse delay-500"></div>
+	<!-- Enhanced floating geometric shapes with more variety -->
+	<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/12 to-transparent rounded-full animate-pulse blur-sm"></div>
+	<div class="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-br from-accent/12 to-transparent rounded-full animate-pulse delay-1000 blur-sm"></div>
+	<div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-primary/8 to-transparent rounded-full animate-pulse delay-500 blur-sm"></div>
+	<div class="absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-accent/8 to-transparent rounded-full animate-pulse delay-700 blur-sm"></div>
+	<div class="absolute bottom-1/4 left-1/3 w-12 h-12 bg-gradient-to-br from-primary/6 to-transparent rounded-full animate-pulse delay-300 blur-sm"></div>
+	
+	<!-- Animated grid pattern overlay -->
+	<div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--primary-rgb),0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
 
 	<header
 		class="relative section-px container mx-auto grid items-center gap-16 gap-y-12 py-20 text-balance {centered ? 'place-items-center text-center' : 'xl:grid-cols-[1fr_auto]'}"
 		data-enter-container
 	>
 		<div class="grid gap-10" class:max-w-prose={centered}>
-			<!-- Premium badge with enhanced design -->
-			<div class="inline-flex items-center gap-3 w-fit px-6 py-4 rounded-full bg-gradient-to-r from-white/95 to-white/90 backdrop-blur-xl border border-primary/20 text-primary font-bold text-sm hover:scale-105 hover:shadow-2xl transition-all duration-500 group relative overflow-hidden" data-enter>
-				<!-- Animated background -->
-				<div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+			<!-- Ultra-premium badge with enhanced design -->
+			<div class="inline-flex items-center gap-3 w-fit px-8 py-5 rounded-full bg-gradient-to-r from-white/98 to-white/95 backdrop-blur-xl border-2 border-primary/30 text-primary font-bold text-sm hover:scale-110 hover:-translate-y-1 transition-all duration-700 group relative overflow-hidden" data-enter>
+				<!-- Multiple animated background layers -->
+				<div class="absolute inset-0 bg-gradient-to-r from-primary/8 via-accent/8 to-primary/8 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+				<div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"></div>
 				
 				<span class="relative flex items-center gap-2">
-					<span class="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-accent animate-ping"></span>
-					<span class="h-3 w-3 rounded-full bg-gradient-to-r from-primary to-accent absolute"></span>
+					<span class="h-4 w-4 rounded-full bg-gradient-to-r from-primary to-accent animate-ping"></span>
+					<span class="h-4 w-4 rounded-full bg-gradient-to-r from-primary to-accent absolute"></span>
+					<span class="h-2 w-2 rounded-full bg-gradient-to-r from-accent to-primary absolute animate-ping delay-300"></span>
 				</span>
-				<span class="relative z-10 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+				<span class="relative z-10 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent font-extrabold text-base">
 					Backed by Sequoia • 10x ROI proven
 				</span>
-				<span class="text-lg relative z-10">🚀</span>
+				<span class="text-xl relative z-10 animate-bounce">🚀</span>
 				
-				<!-- Shimmer effect -->
-				<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+				<!-- Enhanced shimmer effects -->
+				<div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200"></div>
+				<div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 delay-300"></div>
+				
+				<!-- Pulsing border -->
+				<div class="absolute inset-0 rounded-full border border-primary/40 animate-pulse"></div>
 			</div>
 
 			<h1 class="text-display w-full relative group leading-tight" data-enter>

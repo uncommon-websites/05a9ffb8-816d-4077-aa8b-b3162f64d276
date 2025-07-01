@@ -1,12 +1,11 @@
-<script lang="ts">
 	// Components
 	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
 	import UseCases from "$lib/components/layout/UseCases.svelte";
 	import Summary from "$lib/components/layout/Summary.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
-	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
+	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 </script>
 
 <Hero
