@@ -2,9 +2,6 @@
 	// Components
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 
-	// Icons
-	import StakeholderGrid from "$lib/components/layout/StakeholderGrid.svelte";
-	import Story from "./Story.svelte";
 	import SecondaryHero from "$lib/components/layout/hero-sections/SecondaryHero.svelte";
 	import Culture from "$lib/components/layout/Culture.svelte";
 
