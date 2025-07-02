@@ -6,7 +6,6 @@
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
-	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 </script>
 
