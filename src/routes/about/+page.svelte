@@ -4,6 +4,7 @@
 	import StakeholderGrid from "$lib/components/layout/StakeholderGrid.svelte";
 	import SecondaryHero from "$lib/components/layout/hero-sections/SecondaryHero.svelte";
 	import Culture from "$lib/components/layout/Culture.svelte";
+	import History from "$lib/components/layout/History.svelte";
 
 	// Constants
 	const values = [
@@ -29,7 +30,7 @@
 />
 
 <!-- Story Section -->
-<Story
+<History
 	paragraphs={[
 		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
 		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
