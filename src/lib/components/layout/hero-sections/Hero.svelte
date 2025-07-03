@@ -214,7 +214,7 @@
 		</div>
 
 		{#if callsToAction.length > 0}
-			<div class="flex gap-6" data-enter>
+			<div class="flex gap-6 justify-center" data-enter>
 				{#each callsToAction as ctaItem, index}
 					<Button
 						href={ctaItem.href}
