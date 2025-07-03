@@ -63,26 +63,27 @@
 	}: Props = $props();
 </script>
 
-<div class="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-accent/20 min-h-screen flex items-center" {...rest}>
-	<!-- Ultra-premium layered background with depth -->
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(var(--primary-rgb),0.15),transparent_50%)]"></div>
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(var(--accent-rgb),0.12),transparent_50%)]"></div>
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(var(--primary-rgb),0.08),transparent_70%)]"></div>
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_60%,rgba(var(--accent-rgb),0.06),transparent_60%)]"></div>
-	<div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,rgba(var(--primary-rgb),0.04),transparent_80%)]"></div>
+<div class="relative overflow-hidden bg-gradient-to-br from-primary/25 via-background to-secondary/20 min-h-screen flex items-center" {...rest}>
+	<!-- Ultra-premium layered background with enhanced depth -->
+	<div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/15"></div>
+	<div class="absolute inset-0 bg-gradient-to-tl from-secondary/18 via-transparent to-primary/12"></div>
+	<div class="absolute inset-0 bg-gradient-to-r from-transparent via-primary/8 to-transparent"></div>
+	<div class="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/6 to-transparent"></div>
+	<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/8"></div>
 	
-	<!-- Enhanced floating geometric shapes with sophisticated animations -->
-	<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/15 via-primary/8 to-transparent rounded-full animate-pulse blur-sm hover:blur-none transition-all duration-1000"></div>
-	<div class="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-br from-accent/15 via-accent/8 to-transparent rounded-full animate-pulse delay-1000 blur-sm hover:blur-none transition-all duration-1000"></div>
-	<div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-full animate-pulse delay-500 blur-sm"></div>
-	<div class="absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent rounded-full animate-pulse delay-700 blur-sm"></div>
-	<div class="absolute bottom-1/4 left-1/3 w-12 h-12 bg-gradient-to-br from-primary/8 via-primary/4 to-transparent rounded-full animate-pulse delay-300 blur-sm"></div>
-	<div class="absolute top-10 right-1/4 w-28 h-28 bg-gradient-to-br from-accent/12 via-accent/6 to-transparent rounded-full animate-pulse delay-800 blur-sm"></div>
-	<div class="absolute bottom-10 left-1/2 w-18 h-18 bg-gradient-to-br from-primary/9 via-primary/4 to-transparent rounded-full animate-pulse delay-1200 blur-sm"></div>
+	<!-- Enhanced floating geometric shapes with ultra-sophisticated animations -->
+	<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-full animate-pulse blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
+	<div class="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-br from-secondary/20 via-secondary/10 to-transparent rounded-full animate-pulse delay-1000 blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
+	<div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-primary/15 via-primary/8 to-transparent rounded-full animate-pulse delay-500 blur-sm hover:scale-105 transition-all duration-1000"></div>
+	<div class="absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-secondary/15 via-secondary/8 to-transparent rounded-full animate-pulse delay-700 blur-sm hover:scale-105 transition-all duration-1000"></div>
+	<div class="absolute bottom-1/4 left-1/3 w-12 h-12 bg-gradient-to-br from-primary/12 via-primary/6 to-transparent rounded-full animate-pulse delay-300 blur-sm"></div>
+	<div class="absolute top-10 right-1/4 w-28 h-28 bg-gradient-to-br from-secondary/18 via-secondary/9 to-transparent rounded-full animate-pulse delay-800 blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
+	<div class="absolute bottom-10 left-1/2 w-18 h-18 bg-gradient-to-br from-primary/14 via-primary/7 to-transparent rounded-full animate-pulse delay-1200 blur-sm"></div>
 	
-	<!-- Sophisticated animated grid pattern overlay -->
-	<div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--primary-rgb),0.4) 1px, transparent 0); background-size: 40px 40px; animation: float 20s ease-in-out infinite;"></div>
-	<div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--accent-rgb),0.3) 1px, transparent 0); background-size: 60px 60px; animation: float 25s ease-in-out infinite reverse;"></div>
+	<!-- Ultra-sophisticated animated grid pattern overlay with multiple layers -->
+	<div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--color-primary-600),0.5) 1px, transparent 0); background-size: 40px 40px; animation: float 20s ease-in-out infinite;"></div>
+	<div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--color-secondary-600),0.4) 1px, transparent 0); background-size: 60px 60px; animation: float 25s ease-in-out infinite reverse;"></div>
+	<div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--color-primary-500),0.3) 1px, transparent 0); background-size: 80px 80px; animation: float 30s ease-in-out infinite;"></div>
 
 	<header
 		class="relative section-px container mx-auto grid items-center gap-16 gap-y-12 py-20 text-balance {centered ? 'place-items-center text-center' : 'xl:grid-cols-[1fr_auto]'}"

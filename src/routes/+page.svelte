@@ -12,7 +12,7 @@
 <Hero
 	title="Make work worth staying for"
 	subtitle="TANDA helps you retain your essential workforce with real financial benefits—like matched savings, peer bonuses, and KPI rewards—that put people first. Build loyalty. Boost morale. Reduce turnover."
-	imageSrc="/generated/image-a-group-of-diverse-construction-workers-.webp"
+	imageSrc="/generated/image-a-diverse-group-of-construction-workers-.webp"
 	centered={false}
 	callsToAction={[
 		{
