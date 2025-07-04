@@ -17,9 +17,9 @@
 
 <NavigationMenu.Trigger class="group/item inline-flex h-full items-center gap-1">
 	{item.label}
-	<IconChevronDown
+	<Icon
+		name="chevron-down"
 		class="relative top-[1px] size-3 opacity-80 transition duration-200 ease-out group-hover/item:opacity-100 group-data-[state=open]:rotate-180 "
-		aria-hidden="true"
 	/>
 </NavigationMenu.Trigger>
 

@@ -28,8 +28,7 @@ Please update features according to the company's product offering. Do not remov
 	// Components
 	import Button from "$lib/components/ui/Button.svelte";
 	import SectionHeader from "./SectionHeader.svelte";
-	import IconCheck from "~icons/lucide/check";
-	import IconX from "~icons/lucide/x";
+	import Icon from "$lib/components/ui/Icon.svelte";
 	import NumberFlow from "@number-flow/svelte";
 	import LogoScroller from "./LogoScroller.svelte";
 
@@ -239,7 +238,7 @@ Please update features according to the company's product offering. Do not remov
 					<ul class="space-y-3">
 						{#each tier.features as feature}
 							<li class="flex items-center gap-2">
-								<IconCheck class="text-primary-600 dark:text-primary-400 size-5 flex-shrink-0" />
+								<Icon name="check" class="text-primary-600 dark:text-primary-400 size-5 flex-shrink-0" />
 								<span class="text-body text-emphasis-medium dark:text-gray-300">{feature}</span>
 							</li>
 						{/each}
@@ -296,7 +295,7 @@ Please update features according to the company's product offering. Do not remov
 												class="text-primary-600 dark:text-primary-400 mx-auto size-5 sm:mx-0"
 											/>
 										{:else}
-											<IconX class="mx-auto size-5 text-gray-400 sm:mx-0" />
+											<Icon name="x" class="mx-auto size-5 text-gray-400 sm:mx-0" />
 										{/if}
 									{:else}
 										{feature.tiers[tierName]}
@@ -337,9 +336,9 @@ Please update features according to the company's product offering. Do not remov
 									<td class="py-3">
 										{#if typeof feature.tiers[tierName] === "boolean"}
 											{#if feature.tiers[tierName]}
-												<IconCheck class="text-primary-900 dark:text-primary-400 size-5" />
+												<Icon name="check" class="text-primary-900 dark:text-primary-400 size-5" />
 											{:else}
-												<IconX class="size-5 text-gray-400" />
+												<Icon name="x" class="size-5 text-gray-400" />
 											{/if}
 										{:else}
 											<span class="text-callout font-medium text-gray-700 dark:text-gray-300">
