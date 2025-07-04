@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { ComponentType } from "svelte";
+	import Icon from "./Icon.svelte";
 
 	interface Props {
 		title?: string;
 		description?: string;
-		icon?: ComponentType;
+		icon?: string;
 		iconClass?: string;
 		imageSrc?: string;
 		imageAspect?: "16/9" | "9/16";
@@ -39,8 +39,8 @@
 						class="absolute top-3 left-3 bg-white/90 p-1.5 backdrop-blur-sm"
 						style="border-radius: max(2px, calc(var(--radius) - 1.25rem));"
 					>
-						<svelte:component
-							this={icon}
+						<Icon
+							name={icon}
 							class="size-4 {iconClass.includes('text-')
 								? iconClass.split(' ').find((c) => c.startsWith('text-'))
 								: 'text-primary'}"
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 			{:else if icon}
-				<svelte:component this={icon} class={iconClass} />
+				<Icon name={icon} class={iconClass} />
 			{:else if imageSrc}
 				<img
 					src={imageSrc}
