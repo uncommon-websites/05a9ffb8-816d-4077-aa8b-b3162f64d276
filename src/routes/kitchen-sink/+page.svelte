@@ -73,8 +73,9 @@
 
 				<!-- Background Shade -->
 				<div class="space-y-2">
-					<label class="text-sm font-medium">Background: Gray-{backgroundShade}</label>
+					<label for="background-control" class="text-sm font-medium">Background: Gray-{backgroundShade}</label>
 					<select
+						id="background-control"
 						bind:value={backgroundShade}
 						class="border-border bg-background text-foreground w-full rounded border p-2"
 					>
@@ -368,7 +369,7 @@
 				{
 					title: "AI-powered insights",
 					description: "Get intelligent recommendations powered by machine learning algorithms.",
-					icon: IconZap,
+					icon: "zap",
 					imageSrc:
 						"https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
 				}
@@ -383,7 +384,7 @@
 				{
 					title: "Lightning fast",
 					description: "Built for speed with optimized performance and caching.",
-					icon: IconZap
+					icon: "zap"
 				},
 				{
 					title: "Global infrastructure",

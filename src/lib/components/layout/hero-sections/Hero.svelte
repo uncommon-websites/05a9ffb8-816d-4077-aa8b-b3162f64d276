@@ -37,6 +37,7 @@
 	type Props = {
 		title: string;
 		subtitle: string;
+		imageSrc?: string;
 		callsToAction?: Array<{
 			href: string;
 			label: string;
@@ -46,6 +47,7 @@
 	let {
 		title,
 		subtitle,
+		imageSrc,
 		callsToAction = [cta],
 		...rest
 	}: Props = $props();
