@@ -403,14 +403,14 @@
 				{
 					title: "Bank-level security",
 					description: "Your data is protected with enterprise-grade encryption.",
-					icon: IconShield,
+					icon: "shield",
 					imageSrc:
 						"https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
 				},
 				{
 					title: "Team collaboration",
 					description: "Work together seamlessly with real-time tools.",
-					icon: IconUsers
+					icon: "users"
 				},
 				{
 					title: "Analytics dashboard",
@@ -429,19 +429,19 @@
 				{
 					title: "Cloud hosting",
 					description: "Reliable cloud infrastructure with 99.9% uptime.",
-					icon: IconZap,
+					icon: "zap",
 					imageSrc:
 						"https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				},
 				{
 					title: "Secure payments",
 					description: "PCI-compliant payment processing.",
-					icon: IconShield
+					icon: "shield"
 				},
 				{
 					title: "Team management",
 					description: "Manage teams and permissions easily.",
-					icon: IconUsers
+					icon: "users"
 				},
 				{
 					title: "Real-time analytics",
@@ -460,12 +460,12 @@
 				{
 					title: "API integration",
 					description: "Connect with third-party services seamlessly.",
-					icon: IconZap
+					icon: "zap"
 				},
 				{
 					title: "Data encryption",
 					description: "End-to-end encryption for all data.",
-					icon: IconShield
+					icon: "shield"
 				},
 				{
 					title: "Mobile apps",
@@ -476,12 +476,12 @@
 				{
 					title: "24/7 support",
 					description: "Round-the-clock customer assistance.",
-					icon: IconUsers
+					icon: "users"
 				},
 				{
 					title: "Advanced reporting",
 					description: "Detailed insights and custom reports.",
-					icon: IconShield,
+					icon: "shield",
 					imageSrc:
 						"https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				}
@@ -496,12 +496,12 @@
 				{
 					title: "Auto-scaling",
 					description: "Automatically scale based on demand.",
-					icon: IconZap
+					icon: "zap"
 				},
 				{
 					title: "SSL certificates",
 					description: "Free SSL certificates for all domains.",
-					icon: IconShield
+					icon: "shield"
 				},
 				{
 					title: "Developer tools",
