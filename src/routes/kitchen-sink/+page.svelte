@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Button from "$lib/components/ui/Button.svelte";
 	import Card from "$lib/components/ui/Card.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
@@ -33,7 +33,7 @@
 	<!-- Theme Controls -->
 	<div class="fixed top-4 right-4 z-50">
 		<Button variant="secondary" size="sm" onclick={() => (showControls = !showControls)}>
-			<IconSettings class="size-4" />
+			<Icon name="settings" class="size-4" />
 		</Button>
 
 		{#if showControls}
@@ -41,7 +41,7 @@
 				class="bg-card border-border absolute top-12 right-0 w-80 space-y-4 rounded-lg border p-4 shadow-lg"
 			>
 				<div class="mb-4 flex items-center gap-2">
-					<IconPalette class="text-primary size-4" />
+					<Icon name="palette" class="text-primary size-4" />
 					<h3 class="text-headline font-medium">Theme Controls</h3>
 				</div>
 
@@ -153,12 +153,12 @@
 			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
 				<Card title="Basic Card" description="This is a basic card component with some content." />
 
-				<Card title="Card with Icon" description="A card that contains an icon." icon={IconZap} />
+				<Card title="Card with Icon" description="A card that contains an icon." icon="zap" />
 
 				<Card
 					title="Custom Icon Color"
 					description="Icon with custom red color."
-					icon={IconZap}
+					icon="zap"
 					iconClass="size-5 text-red-500"
 				/>
 
@@ -179,7 +179,7 @@
 				<Card
 					title="Icon + Landscape"
 					description="Icon overlay on landscape image."
-					icon={IconShield}
+					icon="shield"
 					imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
 					imageAspect="16/9"
 				/>
@@ -187,7 +187,7 @@
 				<Card
 					title="Icon + Portrait"
 					description="Icon overlay on portrait image."
-					icon={IconUsers}
+					icon="users"
 					imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
 					imageAspect="9/16"
 				/>
