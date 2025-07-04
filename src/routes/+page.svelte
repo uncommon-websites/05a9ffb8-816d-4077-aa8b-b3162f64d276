@@ -6,11 +6,12 @@
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
+	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 </script>
 
 <Hero
-	title="Make work worth staying for"
+	title="Helping your frontline team save, earn, and stay"
 	subtitle="TANDA helps you retain your essential workforce with real financial benefits—like matched savings, peer bonuses, and KPI rewards—that put people first. Build loyalty. Boost morale. Reduce turnover."
 	imageSrc="/generated/image-a-diverse-group-of-construction-workers-.webp"
 	centered={false}
@@ -37,13 +38,11 @@
 />
 
 <Summary
-	generating
 	title="What we do"
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
 			name: "Jane Smith",
@@ -76,7 +75,6 @@
 />
 
 <Features
-	generating
 	title="Features"
 	subtitle="Some features"
 	features={[
@@ -99,7 +97,6 @@
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
@@ -139,5 +136,5 @@
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction />
