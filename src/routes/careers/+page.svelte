@@ -9,11 +9,8 @@
 	import Card from "$lib/components/ui/Card.svelte";
 	import JobList, { type JobOpening } from "./JobList.svelte";
 
-	// Icons
-	import IconBriefcase from "~icons/lucide/briefcase";
-	import IconUsers from "~icons/lucide/users";
-	import IconHeart from "~icons/lucide/heart";
-	import IconGlobe from "~icons/lucide/globe";
+	// Components
+	import Icon from "$lib/components/ui/Icon.svelte";
 
 	// Constants
 	const SECTION_BASE_CLASSES = "section-py section-px container mx-auto";
@@ -26,17 +23,17 @@
 		{
 			title: "Flexible Work",
 			description: "Remote-first with flexible hours that respect work-life balance.",
-			icon: IconBriefcase
+			icon: "briefcase"
 		},
 		{
 			title: "Growth Opportunities",
 			description: "Continuous learning with mentorship and education stipends.",
-			icon: IconUsers
+			icon: "users"
 		},
 		{
 			title: "Comprehensive Benefits",
 			description: "Health coverage, retirement plans, and generous paid time off.",
-			icon: IconHeart
+			icon: "heart"
 		}
 	];
 
@@ -171,17 +168,17 @@
 
 	const values = [
 		{
-			icon: IconHeart,
+			icon: "heart",
 			title: "Passion",
 			description: "We're driven by a shared passion for innovation and excellence."
 		},
 		{
-			icon: IconUsers,
+			icon: "users",
 			title: "Collaboration",
 			description: "We believe in teamwork and collaboration to achieve great things."
 		},
 		{
-			icon: IconGlobe,
+			icon: "globe",
 			title: "Global Impact",
 			description: "We're committed to making a positive impact on the world."
 		}

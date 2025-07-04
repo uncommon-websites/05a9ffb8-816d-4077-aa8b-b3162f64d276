@@ -17,7 +17,7 @@
 	let isMenuOpen = $state(false);
 	let scrollBarWidth: number = $state(0);
 	let themeColor: string = $state("");
-	let originalThemeColor: string | null = $state(null);
+	let originalThemeColor: string | null | undefined = $state(null);
 
 	$effect(() => {
 		scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -123,11 +123,13 @@
 		size="lg"
 		variant="ghost"
 		hideLabel
-		suffix={Icon}
 		iconOnly
 		class="z-50 max-h-full"
-		onclick={() => (isMenuOpen = !isMenuOpen)}>Menu</Button
+		onclick={() => (isMenuOpen = !isMenuOpen)}
 	>
+		<Icon name="menu" />
+		Menu
+	</Button>
 </div>
 
 {#snippet linkOrGroup(item: NavItem, index: number)}

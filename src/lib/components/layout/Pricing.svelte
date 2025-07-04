@@ -291,7 +291,8 @@ Please update features according to the company's product offering. Do not remov
 								>
 									{#if typeof feature.tiers[tierName] === "boolean"}
 										{#if feature.tiers[tierName]}
-											<IconCheck
+											<Icon
+						name="check"
 												class="text-primary-600 dark:text-primary-400 mx-auto size-5 sm:mx-0"
 											/>
 										{:else}

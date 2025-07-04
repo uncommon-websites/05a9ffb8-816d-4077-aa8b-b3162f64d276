@@ -4,11 +4,14 @@
 	import Icon from "$lib/components/ui/Icon.svelte";
 
 	// Props
-	const { item } = $props();
+	type Props = {
+		item: any;
+	};
+	const { item }: Props = $props();
 
 	// State
 	let activeImageIndex = $state(0);
-	let hasImages = $derived(item.children.some((child) => child.image));
+	let hasImages = $derived(item.children.some((child: any) => child.image));
 
 	function setActiveImageIndex(index: number) {
 		activeImageIndex = index;
