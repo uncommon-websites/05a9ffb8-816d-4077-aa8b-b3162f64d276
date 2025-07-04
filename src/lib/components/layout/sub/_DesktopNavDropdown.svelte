@@ -1,7 +1,7 @@
 <script lang="ts">
 	// Components
 	import { NavigationMenu } from "bits-ui";
-	import IconChevronDown from "~icons/lucide/chevron-down";
+	import Icon from "$lib/components/ui/Icon.svelte";
 
 	// Props
 	const { item } = $props();

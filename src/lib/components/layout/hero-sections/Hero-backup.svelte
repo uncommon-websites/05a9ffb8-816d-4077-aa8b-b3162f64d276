@@ -99,13 +99,15 @@
 			</h1>
 
 			{#if centered}
-				<p
-					data-enter
-					class="text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out relative"
-				>
-					{subtitle}
+				<div class="relative">
+					<p
+						data-enter
+						class="text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out"
+					>
+						{subtitle}
+					</p>
 					<div class="absolute -top-2 -right-2 text-primary animate-pulse">✨</div>
-				</p>
+				</div>
 			{/if}
 
 			<!-- Enhanced stats with better visual hierarchy -->

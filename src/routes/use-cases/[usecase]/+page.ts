@@ -361,7 +361,7 @@ export const load: PageLoad = async ({ params }) => {
 	const { usecase } = params;
 
 	if (!usecase || !(usecase in useCases)) {
-		return {};
+		return healthcareUseCase;
 	}
 
 	return useCases[usecase as keyof typeof useCases] ?? healthcareUseCase;

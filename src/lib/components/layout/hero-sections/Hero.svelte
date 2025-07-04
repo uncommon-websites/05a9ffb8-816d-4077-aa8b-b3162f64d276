@@ -71,14 +71,66 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/6 to-transparent"></div>
 	<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/8"></div>
 	
-	<!-- Enhanced floating geometric shapes with ultra-sophisticated animations -->
-	<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-full animate-pulse blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
-	<div class="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-br from-secondary/20 via-secondary/10 to-transparent rounded-full animate-pulse delay-1000 blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
-	<div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-primary/15 via-primary/8 to-transparent rounded-full animate-pulse delay-500 blur-sm hover:scale-105 transition-all duration-1000"></div>
-	<div class="absolute top-1/3 right-1/3 w-20 h-20 bg-gradient-to-br from-secondary/15 via-secondary/8 to-transparent rounded-full animate-pulse delay-700 blur-sm hover:scale-105 transition-all duration-1000"></div>
-	<div class="absolute bottom-1/4 left-1/3 w-12 h-12 bg-gradient-to-br from-primary/12 via-primary/6 to-transparent rounded-full animate-pulse delay-300 blur-sm"></div>
-	<div class="absolute top-10 right-1/4 w-28 h-28 bg-gradient-to-br from-secondary/18 via-secondary/9 to-transparent rounded-full animate-pulse delay-800 blur-sm hover:blur-none hover:scale-110 transition-all duration-1500 cursor-pointer"></div>
-	<div class="absolute bottom-10 left-1/2 w-18 h-18 bg-gradient-to-br from-primary/14 via-primary/7 to-transparent rounded-full animate-pulse delay-1200 blur-sm"></div>
+	<!-- Ultra-premium starfield with sophisticated star shapes -->
+	<div class="absolute inset-0 overflow-hidden">
+		<!-- Dynamic starfield background -->
+		<div class="starfield-container">
+			<!-- Large premium stars -->
+			<div class="absolute top-20 left-10 star-shape star-xl animate-twinkle">
+				<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+				<div class="star-glow bg-primary/40"></div>
+			</div>
+			<div class="absolute bottom-32 right-16 star-shape star-large animate-twinkle delay-1000">
+				<div class="star-inner bg-gradient-to-r from-accent via-primary to-accent"></div>
+				<div class="star-glow bg-accent/40"></div>
+			</div>
+			<div class="absolute top-1/2 left-1/4 star-shape star-medium animate-twinkle delay-500">
+				<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+				<div class="star-glow bg-primary/30"></div>
+			</div>
+			<div class="absolute top-1/3 right-1/3 star-shape star-large animate-twinkle delay-700">
+				<div class="star-inner bg-gradient-to-r from-accent via-primary to-accent"></div>
+				<div class="star-glow bg-accent/35"></div>
+			</div>
+			<div class="absolute bottom-1/4 left-1/3 star-shape star-small animate-twinkle delay-300">
+				<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+				<div class="star-glow bg-primary/25"></div>
+			</div>
+			<div class="absolute top-10 right-1/4 star-shape star-xl animate-twinkle delay-800">
+				<div class="star-inner bg-gradient-to-r from-accent via-primary to-accent"></div>
+				<div class="star-glow bg-accent/45"></div>
+			</div>
+			<div class="absolute bottom-10 left-1/2 star-shape star-medium animate-twinkle delay-1200">
+				<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+				<div class="star-glow bg-primary/30"></div>
+			</div>
+			
+			<!-- Additional scattered small stars -->
+			<div class="absolute top-16 right-20 star-shape star-tiny animate-twinkle delay-200">
+				<div class="star-inner bg-gradient-to-r from-primary to-accent"></div>
+			</div>
+			<div class="absolute bottom-20 left-20 star-shape star-tiny animate-twinkle delay-600">
+				<div class="star-inner bg-gradient-to-r from-accent to-primary"></div>
+			</div>
+			<div class="absolute top-40 left-1/2 star-shape star-tiny animate-twinkle delay-900">
+				<div class="star-inner bg-gradient-to-r from-primary to-accent"></div>
+			</div>
+			<div class="absolute bottom-40 right-1/3 star-shape star-tiny animate-twinkle delay-1100">
+				<div class="star-inner bg-gradient-to-r from-accent to-primary"></div>
+			</div>
+			<div class="absolute top-60 right-10 star-shape star-tiny animate-twinkle delay-400">
+				<div class="star-inner bg-gradient-to-r from-primary to-accent"></div>
+			</div>
+			<div class="absolute bottom-60 left-10 star-shape star-tiny animate-twinkle delay-1400">
+				<div class="star-inner bg-gradient-to-r from-accent to-primary"></div>
+			</div>
+		</div>
+		
+		<!-- Shooting stars -->
+		<div class="shooting-star shooting-star-1"></div>
+		<div class="shooting-star shooting-star-2"></div>
+		<div class="shooting-star shooting-star-3"></div>
+	</div>
 	
 	<!-- Ultra-sophisticated animated grid pattern overlay with multiple layers -->
 	<div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle at 1px 1px, rgba(var(--color-primary-600),0.5) 1px, transparent 0); background-size: 40px 40px; animation: float 20s ease-in-out infinite;"></div>
@@ -133,11 +185,31 @@
 				{#if !centered}
 					<span class="text-emphasis-dim block mt-8 relative group text-xl leading-relaxed">
 						<AnimateText text={subtitle} />
-						<!-- Enhanced floating elements -->
-						<div class="absolute -top-4 -right-6 text-primary animate-bounce text-2xl drop-shadow-lg">✨</div>
-						<div class="absolute top-1/2 -left-6 text-accent animate-bounce delay-300 text-2xl drop-shadow-lg">⚡</div>
-						<div class="absolute bottom-0 right-1/4 text-primary/70 animate-bounce delay-600 text-xl drop-shadow-lg">💫</div>
-						<div class="absolute top-0 left-1/3 text-accent/60 animate-bounce delay-900 text-lg drop-shadow-lg">🌟</div>
+						<!-- Ultra-premium animated star elements -->
+						<div class="absolute -top-4 -right-6 animate-bounce">
+							<div class="star-shape star-large text-primary animate-pulse">
+								<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+								<div class="star-glow bg-primary/30"></div>
+							</div>
+						</div>
+						<div class="absolute top-1/2 -left-6 animate-bounce delay-300">
+							<div class="star-shape star-medium text-accent animate-pulse delay-200">
+								<div class="star-inner bg-gradient-to-r from-accent via-primary to-accent"></div>
+								<div class="star-glow bg-accent/30"></div>
+							</div>
+						</div>
+						<div class="absolute bottom-0 right-1/4 animate-bounce delay-600">
+							<div class="star-shape star-small text-primary/70 animate-pulse delay-400">
+								<div class="star-inner bg-gradient-to-r from-primary/70 via-accent/70 to-primary/70"></div>
+								<div class="star-glow bg-primary/20"></div>
+							</div>
+						</div>
+						<div class="absolute top-0 left-1/3 animate-bounce delay-900">
+							<div class="star-shape star-medium text-accent/60 animate-pulse delay-600">
+								<div class="star-inner bg-gradient-to-r from-accent/60 via-primary/60 to-accent/60"></div>
+								<div class="star-glow bg-accent/20"></div>
+							</div>
+						</div>
 					</span>
 				{/if}
 			</h1>
@@ -148,8 +220,18 @@
 					class="text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out relative text-xl leading-relaxed"
 				>
 					{subtitle}
-					<div class="absolute -top-3 -right-3 text-primary animate-bounce text-2xl">✨</div>
-					<div class="absolute bottom-0 -left-3 text-accent animate-bounce delay-500 text-xl">🌟</div>
+					<div class="absolute -top-3 -right-3 animate-bounce">
+						<div class="star-shape star-large text-primary animate-pulse">
+							<div class="star-inner bg-gradient-to-r from-primary via-accent to-primary"></div>
+							<div class="star-glow bg-primary/30"></div>
+						</div>
+					</div>
+					<div class="absolute bottom-0 -left-3 animate-bounce delay-500">
+						<div class="star-shape star-medium text-accent animate-pulse delay-300">
+							<div class="star-inner bg-gradient-to-r from-accent via-primary to-accent"></div>
+							<div class="star-glow bg-accent/30"></div>
+						</div>
+					</div>
 				</div>
 			{/if}
 
