@@ -5,7 +5,6 @@
 	import Summary from "$lib/components/layout/Summary.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
-	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 </script>
@@ -13,7 +12,7 @@
 <Hero
 	title="Helping your frontline team save, earn, and stay"
 	subtitle="TANDA helps you retain your essential workforce with real financial benefits—like matched savings, peer bonuses, and KPI rewards—that put people first. Build loyalty. Boost morale. Reduce turnover."
-	imageSrc="/generated/image-a-diverse-group-of-construction-workers-.webp"
+	imageSrc=/generated/image-a-diverse-group-of-construction-workers-.webp"
 	centered={false}
 	callsToAction={[
 		{
