@@ -512,12 +512,12 @@
 				{
 					title: "User management",
 					description: "Role-based access control system.",
-					icon: IconUsers
+					icon: "users"
 				},
 				{
 					title: "Machine learning",
 					description: "AI-powered recommendations and insights.",
-					icon: IconZap,
+					icon: "zap",
 					imageSrc:
 						"https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
 				},

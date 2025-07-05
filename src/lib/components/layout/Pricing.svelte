@@ -185,36 +185,37 @@ Please update features according to the company's product offering. Do not remov
 </script>
 
 <section class="section-py section-px container mx-auto relative overflow-hidden">
-	<!-- Premium background elements -->
-	<div class="absolute inset-0 bg-gradient-to-br from-primary-50/30 via-transparent to-secondary-50/20 pointer-events-none"></div>
-	<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-100/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
-	<div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary-100/20 rounded-full blur-3xl pointer-events-none animate-pulse" style="animation-delay: 2s;"></div>
+	<!-- Enhanced premium background elements -->
+	<div class="absolute inset-0 bg-gradient-to-br from-primary-50/40 via-transparent to-secondary-50/30 pointer-events-none"></div>
+	<div class="absolute top-1/3 left-1/3 w-[32rem] h-[32rem] bg-gradient-to-br from-primary-100/30 to-primary-200/20 rounded-full blur-3xl pointer-events-none animate-pulse"></div>
+	<div class="absolute bottom-1/3 right-1/3 w-[28rem] h-[28rem] bg-gradient-to-br from-secondary-100/30 to-secondary-200/20 rounded-full blur-3xl pointer-events-none animate-pulse" style="animation-delay: 3s;"></div>
+	<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-gradient-to-br from-primary-50/20 to-secondary-50/20 rounded-full blur-[100px] pointer-events-none animate-pulse" style="animation-delay: 1.5s;"></div>
 	
 	<div class="relative z-10">
-		<div class="flex flex-col items-center text-center mb-16">
+		<div class="flex flex-col items-center text-center section-mb-sm">
 			<SectionHeader {title} {subtitle} />
 			
 			<!-- Enhanced billing toggle with premium styling -->
 			<div class="mt-12 flex justify-center">
-				<div class="relative inline-flex items-center bg-white border border-gray-200 rounded-2xl p-1 gap-1 backdrop-blur-sm">
-					<!-- Sliding background indicator -->
+				<div class="relative inline-flex items-center bg-white/90 backdrop-blur-md border border-gray-200/80 rounded-2xl p-1.5 gap-1">
+					<!-- Enhanced sliding background indicator -->
 					<div 
-						class="absolute inset-y-1 w-[calc(50%-0.125rem)] bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl transition-all duration-300 ease-out"
-						style="transform: translateX({annual ? 'calc(100% + 0.25rem)' : '0'})"
+						class="absolute inset-y-1.5 w-[calc(50%-0.1875rem)] bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 rounded-xl transition-all duration-500 ease-out"
+						style="transform: translateX({annual ? 'calc(100% + 0.375rem)' : '0'}); box-shadow: 0 4px 12px -2px rgba(var(--color-primary-500), 0.3);"
 					></div>
 					
 					<button
-						class="relative z-10 rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300 {!annual ? 'text-white' : 'text-gray-700 hover:text-gray-900'}"
+						class="relative z-10 rounded-xl px-7 py-3.5 text-sm font-semibold transition-all duration-500 ease-out {!annual ? 'text-white transform scale-105' : 'text-gray-700 hover:text-gray-900 hover:scale-105'}"
 						onclick={() => (annual = false)}
 					>
 						Monthly
 					</button>
 					<button
-						class="relative z-10 rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300 {annual ? 'text-white' : 'text-gray-700 hover:text-gray-900'}"
+						class="relative z-10 rounded-xl px-7 py-3.5 text-sm font-semibold transition-all duration-500 ease-out {annual ? 'text-white transform scale-105' : 'text-gray-700 hover:text-gray-900 hover:scale-105'}"
 						onclick={() => (annual = true)}
 					>
 						Annual 
-						<span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+						<span class="ml-2 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-green-100 to-green-50 text-green-800 border border-green-200">
 							Save 23%
 						</span>
 					</button>
@@ -227,50 +228,55 @@ Please update features according to the company's product offering. Do not remov
 		{#each tiers as tier, index}
 			<div
 				class={[
-					"group relative flex flex-col rounded-3xl bg-white/80 backdrop-blur-sm border transition-all duration-500 ease-out hover:scale-105",
-					tier.highlight ? "border-primary-200 ring-4 ring-primary-100/50 transform scale-105" : "border-gray-200/60 hover:border-primary-200/60",
-					"hover:bg-white/90"
+					"group relative flex flex-col rounded-3xl bg-white/90 backdrop-blur-md border transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2",
+					tier.highlight ? "border-primary-300/80 ring-4 ring-primary-100/60 transform scale-[1.02] -translate-y-1" : "border-gray-200/70 hover:border-primary-200/80",
+					"hover:bg-white/95"
 				]}
 				role="button"
 				tabindex="0"
 				onmouseenter={() => hoveredCard = tier.name}
 				onmouseleave={() => hoveredCard = null}
 			>
-				<!-- Premium gradient overlay for highlighted tier -->
+				<!-- Enhanced premium gradient overlay for highlighted tier -->
 				{#if tier.highlight}
-					<div class="absolute inset-0 bg-gradient-to-br from-primary-50/50 via-white/50 to-secondary-50/30 rounded-3xl pointer-events-none"></div>
-					<!-- Popular badge -->
-					<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-						<div class="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
-							Most Popular
+					<div class="absolute inset-0 bg-gradient-to-br from-primary-50/60 via-white/60 to-secondary-50/40 rounded-3xl pointer-events-none"></div>
+					<!-- Enhanced popular badge -->
+					<div class="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
+						<div class="bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 text-white px-8 py-3 rounded-full text-sm font-semibold border-2 border-white/20 backdrop-blur-sm">
+							<span class="relative z-10">Most Popular</span>
+							<div class="absolute inset-0 bg-gradient-to-r from-primary-400/20 to-primary-800/20 rounded-full blur-sm"></div>
 						</div>
 					</div>
 				{/if}
 				
-				<!-- Hover glow effect -->
-				<div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-100/0 to-secondary-100/0 transition-all duration-500 group-hover:from-primary-100/20 group-hover:to-secondary-100/10 pointer-events-none"></div>
+				<!-- Enhanced hover glow effect -->
+				<div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-100/0 to-secondary-100/0 transition-all duration-700 group-hover:from-primary-100/30 group-hover:to-secondary-100/20 pointer-events-none"></div>
+				<div class="absolute inset-0 rounded-3xl border border-transparent bg-gradient-to-br from-primary-200/0 to-secondary-200/0 transition-all duration-700 group-hover:from-primary-200/20 group-hover:to-secondary-200/15 pointer-events-none"></div>
 				
-				<div class="relative z-10 p-8 flex flex-col h-full">
-					<!-- Header -->
-					<div class="mb-8">
-						<div class="flex items-center justify-between mb-4">
-							<h3 class="text-title3 font-semibold text-gray-900">{tier.name}</h3>
-							{#if hoveredCard === tier.name}
-								<div class="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300">
-									<Icon name="check" class="w-4 h-4 text-white" />
+				<div class="relative z-10 p-10 flex flex-col h-full">
+					<!-- Enhanced header -->
+					<div class="mb-10">
+						<div class="flex items-center justify-between mb-6">
+							<h3 class="text-title3 font-semibold text-gray-900 tracking-tight">{tier.name}</h3>
+							{#if hoveredCard === tier.name || tier.highlight}
+								<div class="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center transition-all duration-500 transform scale-110">
+									<Icon name="check" class="w-5 h-5 text-white" />
 								</div>
 							{/if}
 						</div>
 						
-						<!-- Pricing with enhanced animation -->
-						<div class="flex items-baseline gap-2 mb-4">
+						<!-- Enhanced pricing with better animation -->
+						<div class="flex flex-col gap-3 mb-6">
 							{#if tier.monthlyPrice === null && tier.yearlyPrice === null}
-								<span class="text-title1 font-bold text-gray-900">Custom</span>
-							{:else}
 								<div class="flex items-baseline">
-									<span class="text-sm text-gray-500 mr-1">$</span>
+									<span class="text-display font-bold text-gray-900 tracking-tight">Custom</span>
+								</div>
+								<p class="text-caption text-gray-500">Contact us for pricing</p>
+							{:else}
+								<div class="flex items-baseline gap-1">
+									<span class="text-lg text-gray-500 font-medium">$</span>
 									<NumberFlow
-										class="text-title1 font-bold text-gray-900"
+										class="text-display font-bold text-gray-900 tracking-tight"
 										format={{
 											style: "decimal",
 											minimumFractionDigits: 0,
@@ -278,13 +284,18 @@ Please update features according to the company's product offering. Do not remov
 										}}
 										value={annual ? tier.yearlyPrice : tier.monthlyPrice}
 									/>
-									<span class="text-callout text-gray-500 ml-2">per employee/month</span>
+									<span class="text-callout text-gray-500 ml-1">per employee</span>
 								</div>
-								{#if annual && tier.monthlyPrice && tier.yearlyPrice}
-									<div class="text-sm text-green-600 font-medium">
-										Save ${((tier.monthlyPrice - tier.yearlyPrice) * 12).toFixed(0)}/year
-									</div>
-								{/if}
+								<div class="flex flex-col gap-1">
+									<span class="text-caption text-gray-500">billed {annual ? 'annually' : 'monthly'}</span>
+									{#if annual && tier.monthlyPrice && tier.yearlyPrice}
+										<div class="inline-flex items-center gap-2">
+											<span class="text-sm text-green-700 font-semibold bg-gradient-to-r from-green-50 to-green-100 px-3 py-1 rounded-full border border-green-200">
+												Save ${((tier.monthlyPrice - tier.yearlyPrice) * 12).toFixed(0)}/year per employee
+											</span>
+										</div>
+									{/if}
+								</div>
 							{/if}
 						</div>
 						
@@ -304,7 +315,7 @@ Please update features according to the company's product offering. Do not remov
 									<div class="flex-shrink-0 w-6 h-6 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mt-0.5">
 										<Icon name="check" class="w-4 h-4 text-white" />
 									</div>
-									<span class="text-body text-gray-700 group-hover/feature:text-gray-900 transition-colors duration-200">
+									<span class="text-body text-gray-700 group-hover:text-gray-900 transition-colors duration-200">
 										{feature}
 									</span>
 								</div>
@@ -482,12 +493,12 @@ Please update features according to the company's product offering. Do not remov
 	}
 	
 	/* Staggered animation for features */
-	.group/feature {
+	.group-feature {
 		animation: slide-in-up 0.6s ease-out forwards;
 		opacity: 0;
 	}
 	
-	.group:hover .group/feature {
+	.group:hover .group-feature {
 		animation-play-state: running;
 		opacity: 1;
 	}
