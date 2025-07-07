@@ -8,6 +8,16 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	
+	// Node.js global types
+	namespace NodeJS {
+		interface Process {
+			cwd(): string;
+			env: Record<string, string | undefined>;
+		}
+	}
+	
+	var process: NodeJS.Process;
 }
 
 export {};

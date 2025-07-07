@@ -35,7 +35,7 @@ Please update features according to the company's product offering. Do not remov
 	// Props
 	const {
 		title = "Financial wellness that works",
-		subtitle = "Empower your essential workers with personalized benefits that drive retention and engagement",
+		subtitle = "Empower your workers with personalized benefits that drive retention and engagement ",
 		tierNames = ["Starter", "Professional", "Enterprise"],
 		features = [
 			{
