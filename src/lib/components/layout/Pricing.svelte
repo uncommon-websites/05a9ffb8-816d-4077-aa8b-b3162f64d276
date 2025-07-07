@@ -482,24 +482,8 @@ Please update features according to the company's product offering. Do not remov
 		}
 	}
 	
-	/* Smooth hover effects */
-	.group:hover .group-hover\:translate-x-1 {
-		transform: translateX(0.25rem);
-	}
-	
 	/* Premium card hover effects */
 	.group:hover {
 		animation: premium-float 3s ease-in-out infinite;
-	}
-	
-	/* Staggered animation for features */
-	.group-feature {
-		animation: slide-in-up 0.6s ease-out forwards;
-		opacity: 0;
-	}
-	
-	.group:hover .group-feature {
-		animation-play-state: running;
-		opacity: 1;
 	}
 </style>

@@ -7,10 +7,11 @@
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
+	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 </script>
 
 <Hero
-	title=Helping your frontline team save, earn, and stay"
+	title="Helping your frontline team save, earn, and stay"
 	subtitle="TANDA helps you retain your essential workforce with real financial benefits—like matched savings, peer bonuses, and KPI rewards—that put people first. Build loyalty. Boost morale. Reduce turnover."
 	callsToAction={[
 		{

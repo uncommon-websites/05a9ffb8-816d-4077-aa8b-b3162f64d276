@@ -281,7 +281,7 @@ const technologyUseCase: UseCase = {
 	}
 };
 
-const educationUseCase = {
+const educationUseCase: UseCase = {
 	meta: {
 		title: "Education",
 		description: "Educational solutions for institutions of all levels"
@@ -304,16 +304,18 @@ const educationUseCase = {
 		{
 			quote:
 				"This platform has transformed how we deliver curriculum and engage with our students.",
-			author: "Dr. Emily Rodriguez",
-			role: "Superintendent, Westview School District",
-			imageSrc: "/images/testimonials/emily-rodriguez.jpg"
+			name: "Dr. Emily Rodriguez",
+			position: "Superintendent",
+			company: "Westview School District",
+			image: "/images/testimonials/emily-rodriguez.jpg"
 		},
 		{
 			quote:
 				"The analytics capabilities have helped us identify at-risk students and intervene earlier.",
-			author: "Professor Thomas Lee",
-			role: "Dean of Students, Horizon University",
-			imageSrc: "/images/testimonials/thomas-lee.jpg"
+			name: "Professor Thomas Lee",
+			position: "Dean of Students",
+			company: "Horizon University",
+			image: "/images/testimonials/thomas-lee.jpg"
 		}
 	],
 	features: {
